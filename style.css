@@ -205,8 +205,6 @@ section {
 
 
 /* Image Carousel */
-
-
 .carousel-container {
   background-color: white;
   display: flex;
@@ -266,7 +264,6 @@ img {
   align-items: center;
   position: absolute;
   bottom: 10px;
-  /* Adjust the distance from the bottom */
   left: 50%;
   transform: translateX(-50%);
 }
@@ -281,8 +278,8 @@ img {
 
 .dot.active {
   background-color: #f4d35e;
-  /* Change color for active dot */
 }
+
 
 /* Footer */
 .site-footer {
@@ -296,7 +293,8 @@ img {
 
 .site-footer hr {
   border-top-color: #bbb;
-  opacity: 0.5
+  opacity: 0.50
+  
 }
 
 .site-footer hr.small {
