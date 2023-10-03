@@ -15,9 +15,10 @@ async function get_api(api_url) {
   show(data);
 }
 
+
 // Function to define innerHTML for HTML table
 function show(data) {
-  let element = "<industries-container'>"
+  let element = "<div class='industries-container'>"
   // Loop to access all rows
   for (let r of data) {
     element += `<div class='card'>`
@@ -31,8 +32,7 @@ function show(data) {
   }
 
   // Setting innerHTML as tab variable
-
-  document.getElementById("industries-container").innerHTML = element;
+  $("#industries-container").html(element);
 }
 
 async function initialise_data() {
@@ -77,12 +77,7 @@ function remove() {
 function filter() {
   // TODO: REPLACE ?name=Sharlene Aery with the parameters of your filter
   // Example: ?id=3
-  fetch(api_url + "?name=Sharlene Aery", {
-    method: "GET",
-    headers: {
-      "Content-type": "application/json; charset=UTF-8"
-    }
-  })
-    .then((response) => response.json())
-    .then((json) => show(json));
+  $.get(api_url + "?name=Sharlene Aery", function(data) {
+    show(data);
+  });
 }

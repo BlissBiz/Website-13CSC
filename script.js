@@ -1,23 +1,23 @@
-if (window.location.pathname === "/index.html") {
-  const carousel = document.querySelector('.carousel');
-  const prevButton = document.getElementById('prevButton');
-  const nextButton = document.getElementById('nextButton');
-  const carouselItems = document.querySelectorAll('.carousel-item');
-  const dots = document.querySelectorAll('.dot');
+$(document).ready(function() {
+  const carousel = $('.carousel');
+  const prevButton = $('#prevButton');
+  const nextButton = $('#nextButton');
+  const carouselItems = $('.carousel-item');
+  const dots = $('.dot');
   let currentIndex = 0;
 
-  prevButton.addEventListener('click', () => {
+  prevButton.on('click', () => {
     currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
     updateCarousel();
   });
 
-  nextButton.addEventListener('click', () => {
+  nextButton.on('click', () => {
     currentIndex = (currentIndex + 1) % carouselItems.length;
     updateCarousel();
   });
 
-  dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
+  dots.each((index, dot) => {
+    $(dot).on('click', () => {
       currentIndex = index;
       updateCarousel();
     });
@@ -25,18 +25,15 @@ if (window.location.pathname === "/index.html") {
 
   function updateCarousel() {
     const offset = -currentIndex * 100;
-    carousel.style.transform = `translateX(${offset}%)`;
+    carousel.css('transform', `translateX(${offset}%)`);
 
     // Update active dot
-    dots.forEach((dot, index) => {
+    dots.each((index, dot) => {
       if (index === currentIndex) {
-        dot.classList.add('active');
+        $(dot).addClass('active');
       } else {
-        dot.classList.remove('active');
+        $(dot).removeClass('active');
       }
     });
   }
-
-
-
-} 
+});
