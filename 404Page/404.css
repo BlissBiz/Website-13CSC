@@ -12,7 +12,7 @@
 
 .rectangle1 {
   position: absolute;
-  width: 90vh;
+  width: 100vh;
   height: 50vh;
   top: 0;
   left: 0;
@@ -21,7 +21,7 @@
 
 .rectangle2 {
   position: absolute;
-  width: 90vh;
+  width: 100vh;
   height: 50vh;
   top: 0;
   left: 820px;
@@ -30,7 +30,7 @@
 
 .rectangle3 {
   position: absolute;
-  width: 90vh;
+  width: 100vh;
   height: 50vh;
   top: 50vh;
   left: 820px;
@@ -39,7 +39,7 @@
 
 .rectangle4 {
   position: absolute;
-  width: 90vh;
+  width: 100vh;
   height: 50vh;
   top: 50vh;
   left: 0;
@@ -73,6 +73,8 @@
   background-color: #a270e4;
   border-radius: 15px;
 }
+
+
 
 .text1 {
   position: absolute;
@@ -126,6 +128,30 @@
 
 
 /* Navagation */
+
+.logo a {
+  position: absolute;
+  width: 54px;
+  top: 345px;
+  left: 400px;
+  font-family: "Lato-Regular", Helvetica;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.IMG {
+  position: absolute;
+  left: 900px;
+  top: 400px;
+  width: 314px;
+  height: 374px;
+  transform: scaleX(-1);
+}
+
 .HomeB {
   position: absolute;
   width: 54px;
