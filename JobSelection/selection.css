@@ -134,6 +134,12 @@ nav {
   top: 100px;
 }
 
+.industries-container {
+  height: 1600px;
+  width: 100vh;
+
+}
+
 .card {
   display: flex;
   flex-direction: row;
@@ -142,23 +148,41 @@ nav {
 .industries-container,
 .card {
   background: transparent;
+  transition: transform 2s ease-in-out;
 }
 
-.selecting .rectangle {
-  width: 500px;
+.details {
+  background: #8e8d97;
+  height: min-content;
+  margin: auto 0 auto 10px;
+}
+
+.industry-name {
+  font-size: 20px;
+  font-weight: 500, bold;
+  text-decoration-line: underline;
+  margin: 10px;
+  color: white
+}
+
+
+.description {
+  font-size: 15px;
+  margin: 15px;
+  color: black;
+  font-weight: 40;
+}
+
+.subjects {
+  font-size: 15px;
+  margin: 15px;
+  color: black;
+  font-weight: 40;
+}
+
+.ellipse {
+  width: 390px;
   height: 250px;
-  background-color: #ffffff;
-  box-shadow: 0px 4.53px 4.53px #00000040;
-  position: absolute;
-  z-index: 100;
-  right: 200px;
-  top: 300px;
-}
-
-.selecting .ellipse {
-  width: 350px;
-  height: 350px;
-  background-color: #ffffff;
   border-radius: 400px;
   box-shadow: 0px 4.53px 4.53px #00000040;
 }

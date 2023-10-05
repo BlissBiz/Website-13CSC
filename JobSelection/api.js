@@ -1,5 +1,5 @@
 //################### API Code ######################//
-const api_url = "https://retoolapi.dev/qVoSBo/data";
+const api_url = "https://retoolapi.dev/rE8Y8d/data";
 //initialise_data();
 get_api(api_url);
 
@@ -23,10 +23,10 @@ function show(data) {
   for (let r of data) {
     element += `<div class='card'>`
     element += `<img class='ellipse' src='${r.image}'>`
-    element += `<div class='description'>`
+    element += `<div class='details'>`
     element += `<p class="industry-name">${r.industry}</p>`;
     element += `<p class="description">${r.description}</p>`;
-    element += `<p class="subjects">${r.subjects}</p>`;
+    element += `<p class="subjects">Recommended Subjects: ${r.subjects}</p>`;
     element += `</div>`;
     element += `</div>`;
   }
@@ -60,6 +60,7 @@ async function initialise_data() {
         .then((json) => console.log(json));
     }
   }
+  remove(1)
 }
 
 function remove() {
