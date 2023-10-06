@@ -26,7 +26,5 @@ var data_setup =
       "subjects": "Biology, Chemistry, Physics, English, Calculus, Statistics",
       "description": "The healthcare industry spans various roles, from researchers advancing medical knowledge to frontline professionals providing vital support tothe general public's health"
     },
-
-
-
+    
   ]
