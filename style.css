@@ -136,6 +136,28 @@ section {
 }
 
 /* Infographic*/
+.info-container {
+  position: absolute;
+  left: 25%;
+  transform: translateX(-100%) translateY(0);
+  /* Start off screen */
+  height: 1000px;
+  width: 1000px;
+  justify-content: center;
+  align-items: center;
+  transition: transform 2s ease-in-out;
+  z-index: 1;
+}
+
+.info-container.active {
+  transform: translateX(-50%) translateY(0);
+}
+
+.info-container img {
+  max-width: 90%;
+  height: auto;
+}
+
 .black-rectangle {
   width: 100%;
   height: 2000px;
@@ -146,59 +168,24 @@ section {
   z-index: 0;
 }
 
+/* Info1 */
 .info1 {
-  position: absolute;
   top: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 1000px;
-  width: 1000px;
-  justify-content: center;
-  align-items: center;
-  transition: transform 2s ease-in-out;
-  z-index: 1;
 }
 
-.info1 .Level-One {
-  max-width: 100%;
-  height: auto;
-}
-
+/* Info2 */
 .info2 {
-  position: absolute;
   top: 650px;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 1000px;
-  width: 1000px;
-  justify-content: center;
-  align-items: center;
   transition: transform 3s ease-in-out;
-  z-index: 1;
 }
 
-.info2 .Level-Two {
-  max-width: 100%;
-  height: auto;
-}
-
+/* Info3 */
 .info3 {
-  position: absolute;
   top: 1260px;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 1000px;
-  width: 1000px;
-  justify-content: center;
-  align-items: center;
   transition: transform 4s ease-in-out;
-  z-index: 1;
 }
 
-.info3 .Level-Three {
-  max-width: 100%;
-  height: auto;
-}
+
 
 
 /* Image Carousel */
