@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  // Define elements using jQuery
   const blackRectangle = $('.black-rectangle');
   const infoContainers = $('.info-container');
   const carousel = $('.carousel');

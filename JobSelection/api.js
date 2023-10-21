@@ -74,9 +74,6 @@ async function initialise_data() {
 
 
 
-
-
-
 function remove() {
   // TODO: REPLACE /1 with the id of the row you want to delete
   fetch(api_url + "/1", {
@@ -96,8 +93,6 @@ function filter() {
     show(data);
   });
 }
-
-
 
 
 /** ************** FILTER FUNCTIONS ********************** */
@@ -152,5 +147,3 @@ function setActiveButton() {
 
 // Call the setActiveButton function to add click event listeners to buttons
 setActiveButton();
-
-
