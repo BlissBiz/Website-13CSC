@@ -4,13 +4,13 @@ function submitContact() {
   const phoneInput = document.getElementById('userPhone').value;
   const emailInput = document.getElementById('userEmail').value;
 
-  // Check character limits
+  // Defines character limits
   const phoneMinLimit = 7;
   const phoneMaxLimit = 20;
   const emailMinLimit = 10;
   const emailMaxLimit = 30;
 
-
+  // Checks if the input is valid 
   if (phoneInput.length < phoneMinLimit || phoneInput.length > phoneMaxLimit) {
     alert(`Phone Number must be between ${phoneMinLimit} and ${phoneMaxLimit} characters.`);
     return;

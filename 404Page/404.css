@@ -1,6 +1,4 @@
 /* Background  */
-
-
 .background {
   background-color: #ffffff;
   max-width: 100vh;
@@ -8,8 +6,7 @@
   padding: 0;
 } 
 
-
-
+/* Rectangles  */
 .rectangle1 {
   position: absolute;
   width: 100vh;
@@ -46,7 +43,7 @@
   background-color: #fd504a;
 }
 
-/* Message */
+/* Infromation */
 .rectangle5 {
   position: absolute;
   width: 1076px;
@@ -58,6 +55,7 @@
   box-shadow: 0px 4px 4px #00000040;
 }
 
+/* Message  */
 .group {
   position: absolute;
   width: 418px;
@@ -73,7 +71,6 @@
   background-color: #a270e4;
   border-radius: 15px;
 }
-
 
 
 .text1 {
