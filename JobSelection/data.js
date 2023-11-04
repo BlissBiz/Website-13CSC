@@ -1,4 +1,3 @@
-
 var data_setup =
   [
     {

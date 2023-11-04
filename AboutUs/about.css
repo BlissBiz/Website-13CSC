@@ -1,6 +1,6 @@
 /* Nav Bar*/
 nav {
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -43,10 +43,7 @@ nav {
   text-decoration: none;
 }
 
-
-/* Mian Section Styles */
-
-
+/* Main Section Styles */
 .AboutUs {
   background-color: #ffffff;
   display: flex;
@@ -69,8 +66,8 @@ nav {
   width: 100%;
   background-size: cover;
 }
-/* Header Text */
 
+/* Header Text */
 .AboutUs .Header {
   position: relative;
   width: 299px;
@@ -128,7 +125,6 @@ nav {
 }
 
 /* Paragraph Styles */
-
 .AboutUs .Para1 {
   position: relative;
   width: 435px;
@@ -169,8 +165,6 @@ nav {
 }
 
 /* Picture Styles*/
-
-
 .AboutUs .pic1 {
   position: relative;
   width: 534px;
@@ -197,7 +191,6 @@ nav {
 }
 
 /* Large Img & Quote Styles */
-
 .AboutUs .Quote {
   height: 800px;
   top: 2928px;
@@ -237,7 +230,6 @@ nav {
 }
 
 /* Contact Styles*/
-
 .contact {
   background-color: #f5f5f5;
   padding: 20px;
@@ -290,8 +282,6 @@ nav {
 .email-input button:hover {
   background-color: #0056b3;
 }
-
-
 
 /* Footer */
 .site-footer {

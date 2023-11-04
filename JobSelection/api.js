@@ -15,8 +15,7 @@ async function get_api(api_url) {
   show(data);
 }
 
-
-// Function to define innerHTML for HTML table
+// Function to define innerHTML for industries container
 function show(data) {
   let element = `<div class='industries-container'>`
   // Loop to access all rows
@@ -36,8 +35,7 @@ function show(data) {
     element += `</div>`;
     element += `</div>`;
   }
-
-
+  
   // Setting innerHTML as tab variable
   $("#industries-container").html(element);
   // Call the filterElementsByClass function with the desired parameter (e.g., "all")
@@ -72,30 +70,14 @@ async function initialise_data() {
   remove(1)
 }
 
-
-
-function remove() {
-  // TODO: REPLACE /1 with the id of the row you want to delete
-  fetch(api_url + "/1", {
-    method: "DELETE",
-    headers: {
-      "Content-type": "application/json; charset=UTF-8"
-    }
-  }
-  )
-}
-
-
+//Showing Data with a parameter
 function filter() {
-  // TODO: REPLACE ?name=Sharlene Aery with the parameters of your filter
-  // Example: ?id=3
-  $.get(api_url + "?name=Sharlene Aery", function(data) {
+  $.get(api_url + "?id=4", function(data) {
     show(data);
   });
 }
 
-
-/** ************** FILTER FUNCTIONS ********************** */
+/*********************** FILTER FUNCTIONS ***********************/
 
 // Function to filter elements based on a class
 function filterSelection(filterClass) {
