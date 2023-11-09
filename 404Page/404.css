@@ -79,6 +79,7 @@ nav {
   font-size: 20px;
   font-weight: 600;
   text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .nav_items .nav_list {
@@ -95,6 +96,7 @@ nav {
   font-size: 17px;
   font-weight: 500;
   text-decoration: none;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
 /* Message  */

@@ -26,7 +26,7 @@ $(document).ready(function() {
 
   // Function to apply slide-in animation
   function applySlideInAnimation() {
-    infoContainers.css('transform', 'translateX(0)');
+    infoContainers.css('transform', 'translateX(0%)'); // Fixed the 'transform' value
   }
 
   // Scroll event

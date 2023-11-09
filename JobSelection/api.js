@@ -20,22 +20,22 @@ function show(data) {
   let element = `<div class='industries-container'>`
   // Loop to access all rows
   for (let r of data) {
-    element += `<div class='card`
-    let list_subjects = r.subjects.split(",")
+    element += `<div class='card`;
+    let list_subjects = r.subjects.split(",");
     for (let i = 0; i < list_subjects.length; i++) {
-      element += " " + list_subjects[i]
+      element += " " + list_subjects[i];
     }
 
-    element += `'>'`
-    element += `<img class='ellipse' src='${r.image}'>`
-    element += `<div class='details'>`
+    element += `'>`;
+    element += `<img class='ellipse' src='${r.image}'>`;
+    element += `<div class='details'>`;
     element += `<p class="industry-name">${r.industry}</p>`;
     element += `<p class="description">${r.description}</p>`;
     element += `<p class="subjects">Recommended Subjects: ${r.subjects}</p>`;
     element += `</div>`;
     element += `</div>`;
   }
-  
+
   // Setting innerHTML as tab variable
   $("#industries-container").html(element);
   // Call the filterElementsByClass function with the desired parameter (e.g., "all")

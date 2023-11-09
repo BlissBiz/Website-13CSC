@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lato-Regular", Helvetica;
 }
 
 nav {
@@ -32,6 +31,7 @@ nav {
   font-size: 27px;
   font-weight: 600;
   text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .navbar .menu {
@@ -48,6 +48,7 @@ nav {
   font-size: 17px;
   font-weight: 500;
   text-decoration: none;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
 section {
@@ -128,7 +129,7 @@ section {
 
 .label .text-wrapper {
   color: #0262ad;
-  font-family: "Gothic A1-Bold", Helvetica, sans-serif;
+  font-family: "Lato-Regular", Helvetica;
   font-size: 40px;
   font-weight: 700;
   letter-spacing: 0;
