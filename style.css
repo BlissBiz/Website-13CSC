@@ -168,7 +168,6 @@ section {
   height: auto;
 }
 
-
 /* Info1 */
 .info1 {
   top: 40px;
@@ -185,7 +184,6 @@ section {
   top: 1260px;
   transition: transform 4s ease-in-out;
 }
-
 
 /* Image Carousel */
 .carousel-container {

@@ -63,7 +63,7 @@ nav {
 
 .AboutUs .overlap {
   height: 658px;
-  background-image: url("aboutpic.png");
+  background-image: url("/AboutUs/imgs/aboutpic.png");
   position: absolute;
   width: 100%;
   background-size: cover;
@@ -196,7 +196,7 @@ nav {
 .AboutUs .Quote {
   height: 800px;
   top: 2928px;
-  background-image: url("celeb.png");
+  background-image: url("/AboutUs/imgs/celeb.png");
   position: absolute;
   width: 100%;
   left: 0;
